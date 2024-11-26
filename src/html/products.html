@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../public/output.css" />
+  </head>
+  <body>
+    <header
+      class="bg-[#000] text-white flex flex-col lg:flex-row gap-10 p-7 items-center"
+    >
+      <div class="flex items-center w-full justify-between">
+        <h1 class="text-4xl font-semibold">Logo</h1>
+        <div class="lg:hidden">
+          <button id="menu"><i class="bx bx-menu text-5xl"></i></button>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex lg:flex-row items-center flex-col gap-20" id="nav">
+        <div>
+          <ul
+            class="flex flex-col lg:flex-row items-center gap-7 text-2xl text-center font-medium lg:text-xl lg:font-normal"
+          >
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./src/html/products.html">Products</a></li>
+            <li><a href="../html/AboutUs.html">About</a></li>
+            <li><a href="../html/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="py-10 lg:py-0 lg:flex gap-10 items-center">
+          <p
+            class="text-center text-xl font-semibold pt-5 lg:pt-0 lg:text-xl lg:font-normal"
+          >
+         <a href="./cart.html"><i class="bx bx-cart text-5xl"></i></a>
+          </p>
+          <button
+            class="w-full border-[1px] border-none bg-[#364fc7] text-xl my-4 py-3 font-semibold text-white lg:py-1 px-5 lg:my-0 rounded-md"
+          >
+            Login
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="flex items-center justify-center w-full lg:gap-20 gap-10 py-5"
+    >
+      <button class="text-4xl">Men</button>
+      <button class="text-4xl">Women</button>
+      <button class="text-4xl">Kids</button>
+    </section>
+
+    <section class="bg-gray-50 py-10">
+      <div>
+        <h1 class="text-4xl py-20 font-semibold text-slate-700 lg:px-20 px-10">
+          Our <span class="underline decoration-[#748ffc]">Collections</span>
+        </h1>
+        <div
+          id="cardsContainer"
+          class="flex flex-col flex-wrap items-center justify-center w-full lg:flex-row"
+        ></div>
+      </div>
+    </section>
+
+    <footer
+      class="flex flex-col lg:flex-row py-10 items-center lg:justify-around w-full gap-10 bg-black text-white"
+    >
+      <div>
+        <h1 class="text-5xl font-semibold">Logo</h1>
+      </div>
+      <div>
+        <ul class="text-lg text-gray-400 flex flex-col gap-3">
+          <p class="text-xl font-medium text-white">Quick Links</p>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Products</a></li>
+          <li><a href="./index.html">About</a></li>
+          <li><a href="./index.html">Contacts</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="text-lg text-gray-400 flex flex-col gap-3">
+          <p class="text-xl font-medium text-white">Contact Us</p>
+          <li><a href="./index.html">+233 550 807 14</a></li>
+          <li><a href="./index.html">onlineshop@gmail.com</a></li>
+          <li><a href="./index.html">Kumasi, Tanoso</a></li>
+          <li><a href="./index.html">Delivery </a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xl font-medium py-5 text-center">Follow Us</p>
+        <div class="text-white text-4xl gap-7 flex items-center justify-center">
+          <a href="https://github.com/Afriyie-Anthony/"><i class='bx bxl-github'></i></a>
+          <i class='bx bxl-facebook-circle'></i>
+          <i class='bx bxl-gmail'></i>
+          <a href="https://www.linkedin.com/in/anthony-afriyie-7804a02b3/"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../javascript/productsScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Store</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./public/output.css" />
+</head>
+
+<body>
+  <header class="bg-[#000] text-white flex flex-col lg:flex-row gap-10 p-7 items-center">
+    <div class="flex items-center w-full justify-between">
+      <h1 class="text-4xl font-semibold">Logo</h1>
+      <div class="lg:hidden">
+        <button id="menu"><i class="bx bx-menu text-5xl"></i></button>
+      </div>
+    </div>
+
+    <nav class="hidden lg:flex lg:flex-row items-center flex-col gap-20" id="nav">
+      <div>
+        <ul
+          class="flex flex-col lg:flex-row items-center gap-7 text-2xl text-center font-medium lg:text-xl lg:font-normal">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./src/html/products.html">Products</a></li>
+          <li><a href="./src/html/AboutUs.html">About</a></li>
+          <li><a href="./src/html/contact.html">Contacts</a></li>
+        </ul>
+      </div>
+
+      <div class="py-10 lg:py-0 lg:flex gap-10 items-center">
+        <p class="text-center text-xl font-semibold pt-5 lg:pt-0 lg:text-xl lg:font-normal">
+          <a href="/src/html/cart.html"><i class="bx bx-cart text-5xl"></i></a>
+        </p>
+        <button
+          class="w-full border-[1px] border-none bg-[#364fc7] text-xl my-4 py-3 font-semibold text-white lg:py-1 px-5 lg:my-0 rounded-md">
+          Login
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section
+    class="bg-[#e7f5ff] xl:bg-hero bg-no-repeat bg-cover bg-center flex flex-col items-center gap-10 lg:flex-row lg:p-10 p-5 my-10 lg:mx-20 mx-2 rounded-lg lg:h-[80vh]">
+    <div class="xl:w-[55%] lg:w-[85%]">
+      <small class="text-lg text-[#748ffc] uppercase font-semibold flex items-center gap-3">modern collection <i
+          class="bx bxs-flame text-2xl"></i></small>
+      <h1 class="py-3 text-3xl font-semibold leading-snug md:text-5xl lg:text-6xl lg:leading-normal">
+        Elevate Your Look With Every Click Shop Today
+      </h1>
+      <p class="text-base py-2 border-l-4 px-1 border-[#748ffc]">
+        Discover quality and style with premium collection. Shop confidently
+        for unique, fashionable pieces that elevate your wardrope!
+      </p>
+
+      <div class="pt-20 flex flex-col lg:flex-row gap-10">
+        <button class="bg-slate-600 py-3 px-5 text-white font-semibold text-xl rounded-md">
+          Latest Product
+        </button>
+        <button class="bg-[#364fc7] py-3 px-5 text-white font-semibold text-xl rounded-md">
+          Popular Product
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- New arrivals products -->
+  <section class="bg-gray-50 py-10">
+    <div>
+      <h1 class="text-4xl py-5 font-semibold text-slate-700 text-center">
+        New <span class="underline decoration-[#748ffc]">Arrivals</span>
+      </h1>
+
+      <div id="cardsContainer" class="flex flex-col flex-wrap items-center justify-center w-full lg:flex-row">
+
+      </div>
+  </section>
+ 
+  <section class="py-20 bg-gray-100">
+    <div>
+      <h1 class="text-4xl py-10 font-semibold text-slate-700 text-center">
+        Popu<span class="underline decoration-[#748ffc]">lar Products</span>
+      </h1>
+
+      <div class="flex flex-col gap-10 flex-wrap items-center justify-center w-full lg:flex-row">
+        <div>
+          <img src="./public/images/product_3.png" alt="" class="w-[300px]" />
+          <div class="border-[1px] border-white rounded-b-md bg-white px-3 w-[300px]">
+            <h1 class="text-2xl">Casual Round Neck</h1>
+            <p class="flex items-center justify-between text-gray-600 font-semibold">
+              Women <span class="text-[#748ffc]">$70.00</span>
+            </p>
+            <p class="py-1 text-xs text-gray-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Libero, enim
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./public/images/product_4_1.png" alt="" class="w-[300px]" />
+          <div class="border-[1px] border-white rounded-b-md bg-white px-3 w-[300px]">
+            <h1 class="text-2xl">Casual Round Neck</h1>
+            <p class="flex items-center justify-between text-gray-600 font-semibold">
+              Women <span class="text-[#748ffc]">$70.00</span>
+            </p>
+            <p class="py-1 text-xs text-gray-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Libero, enim
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./public/images/product_7.png" alt="" class="w-[300px]" />
+          <div class="border-[1px] border-white rounded-b-md bg-white px-3 w-[300px]">
+            <h1 class="text-2xl">Casual Round Neck</h1>
+            <p class="flex items-center justify-between text-gray-600 font-semibold">
+              Women <span class="text-[#748ffc]">$70.00</span>
+            </p>
+            <p class="py-1 text-xs text-gray-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Libero, enim
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./public/images/product_6.png" alt="" class="w-[300px]" />
+          <div class="border-[1px] border-white rounded-b-md bg-white px-3 w-[300px]">
+            <h1 class="text-2xl">Casual Round Neck</h1>
+            <p class="flex items-center justify-between text-gray-600 font-semibold">
+              Women <span class="text-[#748ffc]">$70.00</span>
+            </p>
+            <p class="py-1 text-xs text-gray-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Libero, enim
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-200 py-10">
+    <div>
+      <h1 class="text-4xl py-5 font-semibold text-slate-700 text-center">
+        Our <span class="underline decoration-[#748ffc]">Features</span>
+      </h1>
+      <div class="bg-[#eee] flex flex-col lg:flex-row gap-10 items-center px-10 lg:px-20 py-5">
+        <div class="flex-[1]">
+          <h1 class="text-2xl py-3 font-semibold">Easy Return</h1>
+          <p class="text-sm text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reiciendis natus Lorem ipsum dolor sit,
+          </p>
+        </div>
+        <div class="flex-[1]">
+          <h1 class="text-2xl py-3 font-semibold">Fast Delivery</h1>
+          <p class="text-sm text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reiciendis natus ex iste officia, id atque nisi
+          </p>
+        </div>
+        <div class="flex-[1]">
+          <h1 class="text-2xl py-3 font-semibold">Secure Payment</h1>
+          <p class="text-sm text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reiciendis natus ex iste officia
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="flex flex-col lg:flex-row py-10 items-center lg:justify-around w-full gap-10 bg-black text-white">
+    <div>
+      <h1 class="text-5xl font-semibold">Logo</h1>
+    </div>
+    <div>
+      <ul class="text-lg text-gray-400 flex flex-col gap-3">
+        <p class="text-xl font-medium text-white">Quick Links</p>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html">Products</a></li>
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./index.html">Contacts</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="text-lg text-gray-400 flex flex-col gap-3 ">
+        <p class="text-xl font-medium text-white ">Contact Us</p>
+        <li><a href="./index.html">+233 550 807 14</a></li>
+        <li><a href="./index.html">onlineshop@gmail.com</a></li>
+        <li><a href="./index.html">Kumasi, Tanoso</a></li>
+        <li><a href="./index.html">Delivery </a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xl font-medium py-5 text-center">Follow Us</p>
+      <div class="text-white text-4xl gap-7 flex items-center justify-center">
+        <a href="https://github.com/Afriyie-Anthony/"><i class='bx bxl-github'></i></a>
+        <i class='bx bxl-facebook-circle'></i>
+        <i class='bx bxl-gmail'></i>
+        <a href="https://www.linkedin.com/in/anthony-afriyie-7804a02b3/"><i class='bx bxl-linkedin-square'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/javascript/script.js"></script>
+</body>
+
+</html>

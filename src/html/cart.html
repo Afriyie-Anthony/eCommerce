@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="../../public/output.css" />
+</head>
+
+<body>
+  <header
+  class="bg-[#000] text-white flex flex-col lg:flex-row gap-10 p-7 items-center"
+>
+  <div class="flex items-center w-full justify-between">
+    <h1 class="text-4xl font-semibold">Logo</h1>
+    <div class="lg:hidden">
+      <button id="menu"><i class="bx bx-menu text-5xl"></i></button>
+    </div>
+  </div>
+
+  <nav class="hidden lg:flex lg:flex-row items-center flex-col gap-20" id="nav">
+    <div>
+      <ul
+        class="flex flex-col lg:flex-row items-center gap-7 text-2xl text-center font-medium lg:text-xl lg:font-normal"
+      >
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="./src/html/products.html">Products</a></li>
+        <li><a href="../html/AboutUs.html">About</a></li>
+        <li><a href="../html/contact.html">Contacts</a></li>
+      </ul>
+    </div>
+
+    <div class="py-10 lg:py-0 lg:flex gap-10 items-center">
+      <p
+        class="text-center text-xl font-semibold pt-5 lg:pt-0 lg:text-xl lg:font-normal"
+      >
+     <a href="./cart.html"><i class="bx bx-cart text-5xl"></i></a>
+      </p>
+      <button
+        class="w-full border-[1px] border-none bg-[#364fc7] text-xl my-4 py-3 font-semibold text-white lg:py-1 px-5 lg:my-0 rounded-md"
+      >
+        Login
+      </button>
+    </div>
+  </nav>
+</header>
+
+  <h1 class="text-3xl lg:text-5xl px-10 py-10">Your Shopping Cart</h1>
+  <section class="flex flex-col lg:flex-row px-5 py-10 gap-5">
+    <div class="flex-[2] flex flex-col gap-10">
+      <div class="bg-gray-100 flex flex-col lg:flex-row px-5 py-3 rounded-md gap-[5rem] items-center">
+        <div class="flex flex-col items-center justify-center w">
+          <img src="../../public/images/product_1.png" alt="" class="w-[100px]">
+          <p class="py-2">Cassual Round Neck</p>
+        </div>
+        <div>
+          <p class="text-center text-2xl">XL</p>
+        </div>
+        <div>
+          <button class="text-2xl bg-slate-300 px-2">-</button>
+          <span class="px-1 w-full">2000</span>
+          <button class="text-2xl bg-slate-300 px-2">+</button>
+        </div>
+        <div>
+          <p>$40.00</p>
+        </div>
+        <div class="flex items-center h-[100px] lg:border-l-[1px] border-slate-600 px-3">
+          <p>delete</p>
+        </div>
+      </div>
+      <div class="bg-gray-100 flex flex-col lg:flex-row px-5 py-3 rounded-md gap-[5rem] items-center">
+        <div class="flex flex-col items-center justify-center w">
+          <img src="../../public/images/product_1.png" alt="" class="w-[100px]">
+          <p class="py-2">Cassual Round Neck</p>
+        </div>
+        <div>
+          <p class="text-center text-2xl">XL</p>
+        </div>
+        <div>
+          <button class="text-2xl bg-slate-300 px-2">-</button>
+          <span class="px-1 w-auto">200000</span>
+          <button class="text-2xl bg-slate-300 px-2">+</button>
+        </div>
+        <div>
+          <p>$40.00</p>
+        </div>
+        <div class="flex items-center h-[100px] lg:border-l-[1px] border-slate-600 px-3">
+          <p>delete</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 flex flex-col lg:flex-row px-5 py-3 rounded-md gap-[5rem] items-center">
+        <div class="flex flex-col items-center justify-center">
+          <img src="../../public/images/product_1.png" alt="" class="w-[100px]">
+          <p class="py-2">Cassual Round Neck</p>
+        </div>
+        <div>
+          <p class="text-center text-2xl">XL</p>
+        </div>
+        <div>
+          <button class="text-2xl bg-slate-300 px-2">-</button>
+          <span class="px-1 w-full">200000</span>
+          <button class="text-2xl bg-slate-300 px-2">+</button>
+        </div>
+        <div>
+          <p>$40.00</p>
+        </div>
+        <div class="flex items-center h-[100px] lg:border-l-[1px] border-slate-600 px-3">
+          <p>delete</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex-[1] bg-gray-200 px-3 py-5 text-center rounded-md h-[520px]">
+      <h1 class="text-4xl font-semibold pb-10">Order Card</h1>
+      <p class="flex gap-[6rem] justify-center text-center text-xl">
+        Order Total: <span id="total" class="font-semibold">$60.00</span>
+      </p>
+      <p class="flex gap-[7rem] justify-center text-center text-xl py-7">
+        Subtotal: <span id="total" class="font-semibold">$60.00</span>
+      </p>
+      <p class="flex gap-[7rem] justify-center text-center text-xl pb-20">
+        Delivery: <span id="total" class="font-semibold">$10.00</span>
+      </p>
+      <hr class="border-[0.4px] border-slate-700">
+      <p class="flex gap-[10rem] justify-center text-center text-xl py-10">
+        Total: <span id="total" class="font-semibold">$70.00</span>
+      </p>
+
+      <button class="bg-[#97abf8] px-5 py-3 rounded-md font-bold">CheckOut Items</button>
+    </div>
+  </section>
+
+  <footer class="flex flex-col lg:flex-row py-10 items-center lg:justify-around w-full gap-10 bg-black text-white">
+    <div>
+      <h1 class="text-5xl font-semibold">Logo</h1>
+    </div>
+    <div>
+      <ul class="text-lg text-gray-400 flex flex-col gap-3">
+        <p class="text-xl font-medium text-white">Quick Links</p>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html">Products</a></li>
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./index.html">Contacts</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="text-lg text-gray-400 flex flex-col gap-3 ">
+        <p class="text-xl font-medium text-white ">Contact Us</p>
+        <li><a href="./index.html">+233 550 807 14</a></li>
+        <li><a href="./index.html">onlineshop@gmail.com</a></li>
+        <li><a href="./index.html">Kumasi, Tanoso</a></li>
+        <li><a href="./index.html">Delivery </a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xl font-medium py-5 text-center">Follow Us</p>
+      <div class="text-white text-4xl gap-7 flex items-center justify-center">
+        <a href="https://github.com/Afriyie-Anthony/"><i class='bx bxl-github'></i></a>
+        <i class='bx bxl-facebook-circle'></i>
+        <i class='bx bxl-gmail'></i>
+        <a href="https://www.linkedin.com/in/anthony-afriyie-7804a02b3/"><i class='bx bxl-linkedin-square'></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
